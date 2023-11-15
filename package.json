@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "Math": "^0.0.1-security",
+    "pngjs": "^7.0.0",
+    "timers-promises": "^1.0.1"
+  }
+}

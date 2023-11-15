@@ -1,0 +1,36 @@
+<style>
+    img {
+        border: 1px solid #555;
+    }
+
+    button {
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+        width:10%;
+        height:10%;
+    }
+</style>
+
+<body>
+    <form action="/">
+        <button id="frag">Fragment</button>
+    </form>
+    <br>
+    Original: <br>
+    <img class="img" src="/images/{{imgName}}.png" alt="Original">
+
+    <ul> 
+        {{list}}
+    </ul>
+
+  <script>
+    document.getElementById('frag').addEventListener('click', async () => {
+      try {
+        await fetch('/frag');
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    });
+  </script>
+</body>
